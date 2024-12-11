@@ -8,10 +8,10 @@ type ContextValueProps = {
 
 export const FavoritesContext = createContext<ContextValueProps>({
   ids: [],
-  addFavorite: function (id: string): void {
+  addFavorite: function (): void {
     throw new Error("addFavorite Function not implemented.");
   },
-  removeFavorite: function (id: string): void {
+  removeFavorite: function (): void {
     throw new Error("removeFavorite Function not implemented.");
   },
 });
