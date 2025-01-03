@@ -13,6 +13,19 @@ import FavoritesScreen from "@/screens/FavoritesScreen";
 import FavoritesContextProvider from "@/store/context/favorites-context";
 import { Provider } from "react-redux";
 import { store } from "@/store/redux/store";
+import * as SplashScreen from "expo-splash-screen";
+import React from "react";
+
+// Keep the splash screen visible while we fetch resources
+SplashScreen.preventAutoHideAsync();
+
+// Set the animation options. This is optional.
+SplashScreen.setOptions({
+  duration: 1000,
+  fade: true,
+});
+
+setTimeout(SplashScreen.hideAsync, 5000);
 
 export type RootStackParamList = {
   Drawer: undefined;
