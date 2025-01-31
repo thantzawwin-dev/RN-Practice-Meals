@@ -25,7 +25,7 @@ SplashScreen.setOptions({
   fade: true,
 });
 
-setTimeout(SplashScreen.hideAsync, 5000);
+setTimeout(SplashScreen.hideAsync, 1000);
 
 export type RootStackParamList = {
   Drawer: undefined;
@@ -70,18 +70,14 @@ const DrawerNavigator = () => {
         component={CategoriesScreen}
         options={{
           title: "All Categories",
-          drawerIcon: ({ color, size }) => (
-            <Ionicons name="list" color={color} size={size} />
-          ),
+          drawerIcon: ({ color, size }) => <Ionicons name="list" color={color} size={size} />,
         }}
       />
       <Drawer.Screen
         name="Favorites"
         component={FavoritesScreen}
         options={{
-          drawerIcon: ({ color, size }) => (
-            <Ionicons name="star" color={color} size={size} />
-          ),
+          drawerIcon: ({ color, size }) => <Ionicons name="star" color={color} size={size} />,
         }}
       />
     </Drawer.Navigator>

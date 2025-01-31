@@ -20,7 +20,7 @@
     "android": {
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.tigercat.Meals"
@@ -39,9 +39,9 @@
         "expo-splash-screen",
         {
           "backgroundColor": "#232323",
-          "image": "./assets/icon.png",
+          "image": "./assets/SafeAreaView.png",
           "dark": {
-            "image": "./assets/icon.png",
+            "image": "./assets/SafeAreaView.png",
             "backgroundColor": "#000000"
           },
           "imageWidth": 200
